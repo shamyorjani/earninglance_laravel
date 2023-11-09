@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+    "start": "npm run clean && npm run compile && cross-env NODE_ENV=production babel-node src/server/server.js --ignore ./node_modules",
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
